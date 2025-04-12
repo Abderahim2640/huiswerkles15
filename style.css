@@ -1,0 +1,108 @@
+/* Algemene instellingen */
+body {
+    background-color: #eaeaea; /* één achtergrondkleur */
+    margin: 0 auto;
+    width: 80%;
+    font-family: Arial, sans-serif;
+}
+
+/* Algemeen uiterlijk van header, main en footer */
+header, main, footer {
+    background-color: #ffffff; /* afwijkende kleur voor elementen in <body> */
+    padding: 15px;             /* minimaal 5px padding vereist */
+    margin-bottom: 20px;
+    border-radius: 10px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+}
+
+/* Navigatiemenu */
+header nav {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    background-color: #ddd;
+    padding: 10px;
+    border-radius: 5px;
+}
+
+header nav a {
+    text-decoration: none;
+    color: #333;
+    padding: 8px 15px;
+    border-radius: 5px;
+    transition: all 0.3s ease;
+}
+
+header nav a:hover {
+    background-color: #aaa;
+    color: white;
+}
+
+/* Main content blokken (index, mijncv, contact) */
+main {
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+/* Tabelstijl (voor mijncv.html) */
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 15px;
+}
+
+th, td {
+    border: 1px solid #ccc;
+    padding: 10px;
+    text-align: left;
+}
+
+th {
+    background-color: #f0f0f0;
+}
+
+/* Formulierstijl (voor contact.html) */
+form {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+form label {
+    display: flex;
+    flex-direction: column;
+    font-weight: bold;
+}
+
+input[type="text"],
+input[type="email"],
+textarea {
+    padding: 10px;
+    margin-top: 5px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 1em;
+    width: 100%;
+    box-sizing: border-box;
+}
+
+button {
+    padding: 10px;
+    font-size: 1em;
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #45a049;
+}
+
+/* Footer */
+footer {
+    text-align: center;
+    font-size: 0.9em;
+    color: #666;
+}
